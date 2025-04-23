@@ -3,39 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>MZ Weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>San Francisco</h1>
-        <p>
-          Wednesday 13:44, broken clouds
-          <br />
-          Humidity: 81%, Wind: 3.6km/h
-        </p>
-      </div>
-      <div>⛅️ 55°F</div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/mazubillaga" target="_blank">
-        Miren Zubillaga
-      </a>
-      and is
-      <a href="https://github.com/mazubillaga/mz-weather-app" target="_blank">
-        on GitHub</a
-      >
-      and
-      <a href="https://mz-weather-app.netlify.app/" target="_blank"
-        >on Netlify.</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city..." required />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>San Francisco</h1>
+          <p>
+            Wednesday 13:44, broken clouds
+            <br />
+            Humidity: 81%, Wind: 3.6km/h
+          </p>
+        </div>
+        <div>⛅️ 55°F</div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/mazubillaga" target="_blank">
+          Miren Zubillaga
+        </a>
+        and is
+        <a href="https://github.com/mazubillaga/mz-weather-app" target="_blank">
+          on GitHub</a
+        >
+        and
+        <a href="https://mz-weather-app.netlify.app/" target="_blank"
+          >on Netlify.</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
