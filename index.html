@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="src/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <title>MZ Weather App</title>
@@ -15,21 +17,32 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>San Francisco</h1>
-          <p>
-            Wednesday 13:44, broken clouds
-            <br />
-            Humidity: 81%, Wind: 3.6km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">San Francisco</h1>
+            <p class="weather-app-details">
+              Wednesday 13:44, broken clouds
+              <br />
+              Humidity: <strong>81%</strong>, Wind: <strong>3.6km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">⛅️</div>
+            <div class="weather-app-temperature">55</div>
+            <div class="weather-app-unit">°F</div>
+          </div>
         </div>
-        <div>⛅️ 55°F</div>
       </main>
       <footer>
         This project was coded by
